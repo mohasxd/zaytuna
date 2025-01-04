@@ -9,10 +9,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      // background: linear-gradient(to bottom, #f0fff4, #e0f7fa);
-      background-image: url('hero.JPG');
-      background-blend-mode: multiply;
+      background: linear-gradient(to bottom, #f0fff4, #e0f7fa);
       font-family: 'Montserrat', sans-serif;
+    }
+    .hero-main {
+      background-image: url("./hero.JPG");
+      background-color: rgba(0,0,0,0.55);
+      background-blend-mode: darken;
+      background-size: cover;
     }
 
     .hidden {
@@ -39,10 +43,10 @@
   </nav>
 
   <!-- Sections -->
-  <div id="hero" class="h-screen flex items-center justify-center">
+  <div id="hero" class="hero-main h-screen flex items-center justify-center">
     <div class="text-center px-4">
-      <h1 class="text-5xl font-extrabold neutral-title mb-4">Empowering Your Digital Journey</h1>
-      <p class="text-gray-700 text-lg mb-6">Innovative solutions inspired by Islamic heritage and cutting-edge technology.</p>
+      <h1 class="text-5xl font-extrabold text-white mb-4">Empowering Your Digital Journey</h1>
+      <p class="text-white text-lg mb-6">Innovative solutions inspired by Islamic heritage and cutting-edge technology.</p>
       <button onclick="showSection('services')" class="bg-cyan-600 text-white px-6 py-3 rounded-lg text-lg shadow-lg hover:bg-cyan-700 transition">
         Explore Services
       </button>
